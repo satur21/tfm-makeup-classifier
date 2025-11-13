@@ -11,9 +11,9 @@ st.title("🔍 Clasificador de estilos de maquillaje (TFM)")
 CLASSES = ['natural','soft_glam','glam_dia','glam_noche','artistico','tematico','editorial']
 
 @st.cache_resource
+@st.cache_resource
 def load_model():
-    # Carga el modelo SavedModel desde la carpeta ./model
-    return tf.keras.models.load_model("model")
+    return tf.keras.models.load_model("model.h5", compile=False)
 
 st.write("Sube una imagen de un rostro maquillado y el modelo intentará clasificar el estilo.")
 
