@@ -1,7 +1,9 @@
 streamlit
-scikit-learn
-pandas
-numpy
 opencv-python-headless
-mediapipe
-pillow
+mediapipe==0.10.14
+numpy==1.26.4
+pandas
+scikit-learn
+Pillow
+matplotlib
+joblib
